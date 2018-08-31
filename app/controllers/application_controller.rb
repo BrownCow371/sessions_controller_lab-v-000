@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def hello
     if !session[:username]
-      redirect_to 'sessions/login'
+      redirect_to 'sessions/new'
     end
   end
 
